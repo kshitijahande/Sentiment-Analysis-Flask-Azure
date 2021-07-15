@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'Sentiment-Prediction'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_ba7eec60d2144eb2bf6acf24a2ca3d23 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_c9c0d4c8ba514bf481f30fafb0821cbf }}

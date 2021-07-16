@@ -1,11 +1,13 @@
 import flask
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 # Use pickle to load in the pre-trained model
-with open(f'models_archive/tfidf.pickle', 'rb') as f:
+# with open(f'models_archive/tfidf.pickle', 'rb') as f:
+with open(f'/var/www/Sentiment-Analysis-Flask-Azure/models_archive/tfidf.pickle', 'rb') as f:
     vectorizer = pickle.load(f)
 
-with open(f'models_archive/sentiment_classifier.pkl', 'rb') as f:
+with open(f'/var/www/Sentiment-Analysis-Flask-Azure/models_archive/sentiment_classifier.pkl', 'rb') as f:
     model = pickle.load(f)    
 
 # Initialise the Flask app

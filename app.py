@@ -7,6 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 with open(f'/var/www/Sentiment-Analysis-Flask-Azure/models_archive/tfidf.pickle', 'rb') as f:
     vectorizer = pickle.load(f)
 
+# with open(f'models_archive/sentiment_classifier.pkl', 'rb') as f:
 with open(f'/var/www/Sentiment-Analysis-Flask-Azure/models_archive/sentiment_classifier.pkl', 'rb') as f:
     model = pickle.load(f)    
 
